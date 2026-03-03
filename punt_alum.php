@@ -59,6 +59,13 @@ $result = $con->query($query);
                     value="<?php echo isset($_GET['titulo']) ? htmlspecialchars($_GET['titulo']) : ''; ?>">
                 <button type="submit" class="btn btn-secondary">Filtrar</button>
             </form>
+
+            <?php
+            $tituloFiltro = isset($_GET['titulo']) ? $_GET['titulo'] : '';
+            ?>
+            <a href="grafico.php?titulo=<?php echo urlencode($tituloFiltro); ?>" target="_blank"
+                class="btn btn-info mb-3" style="margin-top:10px;">Ver Gráfico</a>
+
             <?php
             if (!empty($_GET['titulo'])) {
                 echo "<p>Filtro activo: Título contiene '" . htmlspecialchars($_GET['titulo']) . "'</p>";
