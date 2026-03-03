@@ -17,11 +17,11 @@
     <?php include('teacher_count.php'); ?>
 
     <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
-        <li class="active"><a href="dashboard_teacher.php"><i class="icon-chevron-right"></i><i
+        <li class=""><a href="dashboard_teacher.php"><i class="icon-chevron-right"></i><i
                     class="icon-group"></i>&nbsp;Mi Clase</a></li>
         <li class=""><a href="teacher_quiz.php"><i class="icon-chevron-right"></i><i class="icon-list"></i>&nbsp;Agregar
                 examen</a></li>
-        <li class=""><a href="punt_alum.php"><i class="icon-chevron-right"></i><i
+        <li class="active"><a href="punt_alum.php"><i class="icon-chevron-right"></i><i
                     class="icon-list"></i>&nbsp;Calificaciones</a></li>
     </ul>
 </div>

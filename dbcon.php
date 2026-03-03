@@ -4,7 +4,6 @@ $user = "root";
 $pass = "";
 $db   = "aulavirtual";
 
-// Conexión MySQLi
 $con = mysqli_connect($host, $user, $pass, $db);
 
 if (!$con) {
@@ -13,7 +12,6 @@ if (!$con) {
 
 mysqli_set_charset($con, "utf8");
 
-// Conexión PDO
 try {
     $pdo_conn = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $pass);
     $pdo_conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

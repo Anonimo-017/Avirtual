@@ -7,6 +7,9 @@
         <li class="active"><a href="teacher_quiz.php"><i class="icon-chevron-right"></i><i
                     class="icon-list"></i>&nbsp;Agregar
                 examen</a></li>
+        <li class=""><a href="punt_alum.php"><i class="icon-chevron-right"></i><i
+                    class="icon-list"></i>&nbsp;Calificaciones</a>
+        </li>
 
     </ul>
 </div>
