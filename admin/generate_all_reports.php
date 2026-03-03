@@ -292,8 +292,8 @@ $teacherDataFormatted = array_map(function ($row) {
     ];
 }, $teacherData);
 
-generateTable($pdf, 'Carreras', $subjectDataFormatted, $subjectHeaders);
-generateTable($pdf, 'Clases', $classDataFormatted, $classHeaders);
+generateTable($pdf, 'Clases', $subjectDataFormatted, $subjectHeaders);
+generateTable($pdf, 'Carreras', $classDataFormatted, $classHeaders);
 generateTable($pdf, 'Usuarios', $userDataFormatted, $userHeaders);
 generateTable($pdf, 'Departamentos', $departmentDataFormatted, $departmentHeaders);
 generateTable($pdf, 'Estudiantes', $studentDataFormatted, $studentHeaders);

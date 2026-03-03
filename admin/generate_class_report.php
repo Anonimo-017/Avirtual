@@ -89,7 +89,7 @@ class MYPDF extends TCPDF
 $pdf = new MYPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false, $organization);
 $pdf->SetCreator(PDF_CREATOR);
 $pdf->SetAuthor($organization['name']);
-$pdf->SetTitle('Reporte de Clases');
+$pdf->SetTitle('Reporte de carreras');
 $pdf->SetSubject('Class Report');
 $pdf->SetKeywords('PDF, report, class');
 
@@ -121,7 +121,7 @@ $pdf->AddPage();
 $pdf->SetFont('helvetica', 'B', 16);
 $pdf->SetTextColor(0, 0, 128);
 $pdf->SetY(45);
-$pdf->Cell(0, 10, 'Reporte de Clases', 0, 1, 'C');
+$pdf->Cell(0, 10, 'Reporte de carreras', 0, 1, 'C');
 $pdf->SetFont('helvetica', '', 10);
 $pdf->SetTextColor(0, 0, 0);
 $pdf->SetY(60);
@@ -168,4 +168,4 @@ function generateTable($pdf, $data, $headers)
 
 generateTable($pdf, $classDataFormatted, $classHeaders);
 
-$pdf->Output('reporte_clases.pdf', 'D');
+$pdf->Output('reporte_carreras.pdf', 'D');
