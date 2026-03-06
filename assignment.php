@@ -78,7 +78,7 @@ if (!$get_id || $get_id <= 0) {
                                             <td><?php echo htmlspecialchars($row['fname']); ?></td>
                                             <td><?php echo htmlspecialchars($row['fdesc']); ?></td>
                                             <td width="250">
-                                                <!-- Ver archivo -->
+
                                                 <?php if ($floc != "") { ?>
                                                 <a data-placement="bottom" title="Ver Archivo"
                                                     id="<?php echo $id; ?>view" class="btn btn-success"
@@ -87,7 +87,6 @@ if (!$get_id || $get_id <= 0) {
                                                 </a>
                                                 <?php } ?>
 
-                                                <!-- Descargar -->
                                                 <?php
                                                         if ($floc == "") {
                                                         } else {
@@ -99,7 +98,6 @@ if (!$get_id || $get_id <= 0) {
                                                 </a>
                                                 <?php } ?>
 
-                                                <!-- Eliminar -->
                                                 <a data-placement="bottom" title="Eliminar"
                                                     id="<?php echo $id; ?>remove" class="btn btn-danger"
                                                     href="#<?php echo $id; ?>" data-toggle="modal">
