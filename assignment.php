@@ -42,7 +42,7 @@ if (!$get_id || $get_id <= 0) {
                         <li><a href="#">Año Escolar: <?php echo htmlspecialchars($class_row['school_year']); ?></a>
                             <span class="divider">/</span>
                         </li>
-                        <li><a href="#"><b>Asignaturas Subidas</b></a></li>
+                        <li><a href="#"><b>Documentacion subida</b></a></li>
                     </ul>
 
                     <div id="block_bg" class="block">
