@@ -10,7 +10,7 @@ $organization = array(
     'address' => 'Carretera Guachochi - Yoquivo, KM. 1.5, Colonia Turuseachi, 33184 Guachochi, Chih.',
     'logo' => 'path/to/your/logo.png',
     'header_image' => __DIR__ . '/images/header.png',
-    'greca_image' => __DIR__ . '/images/grecas.png'
+    'greca_image' => __DIR__ . 'graca.png'
 );
 
 function getUserData($con)
